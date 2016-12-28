@@ -27,10 +27,6 @@ class Tab extends Component {
   static muiName = 'Tab';
 
   static propTypes = {
-     /**
-     * Override the inline-styles of the button element
-     */
-    buttonStyle: PropTypes.object,
     /**
      * The css class name of the root element.
      */
@@ -99,7 +95,6 @@ class Tab extends Component {
       onTouchTap, // eslint-disable-line no-unused-vars
       selected, // eslint-disable-line no-unused-vars
       label,
-      buttonStyle,
       style,
       value, // eslint-disable-line no-unused-vars
       width, // eslint-disable-line no-unused-vars
@@ -137,7 +132,7 @@ class Tab extends Component {
         touchRippleOpacity={rippleOpacity}
         onTouchTap={this.handleTouchTap}
       >
-        <div style={Object.assign(styles.button, buttonStyle)} >
+        <div style={styles.button} >
           {iconElement}
           {label}
         </div>
