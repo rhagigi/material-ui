@@ -28,7 +28,7 @@ class Tab extends Component {
 
   static propTypes = {
      /**
-     * Override the inline-styles of the buttom elements
+     * Override the inline-styles of the button element
      */
     buttonStyle: PropTypes.object,
     /**
